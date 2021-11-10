@@ -14,7 +14,22 @@
     
 }
 
-.ttes {
+.titulo-style {
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    padding: 0;
+    padding-top: 1.5rem;
+}
+
+.container-bg-style {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) 50%);
+
+}
+
+.carousel-style {
+    margin-top: 1rem;
     height: 366px;
     overflow-y: hidden;
 }
@@ -46,6 +61,11 @@
     font-size: 0.8rem;
 }
 
-.col3-style {
+.container-style {
+    display: grid;
+    grid-template-columns: 286px 286px 286px 286px;
     gap: 30px;
+    max-width: 1234px;
+    margin: 0 auto;
+    margin-top: 4rem;
 }
