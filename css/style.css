@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&family=Roboto:wght@100;300;400;700&display=swap');
+
+.dark-theme {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 100%), url(../img/bg-site.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.teste {
+    height: 380px;
+    overflow: hidden;
+    
+}
+
+.ttes {
+    height: 366px;
+    overflow-y: hidden;
+}
+.img-wid {
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+}
+
+.valor {
+    color: #0d6efd;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.btn-ver-mais {
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 700;
+    transition: .3s;
+    margin-top: 1rem;
+}
+
+.btn-ver-mais:hover {
+    transform: scale(1.025);
+}
+
+.card-text-style {
+    font-size: 0.8rem;
+}
+
+.col3-style {
+    gap: 30px;
+}
