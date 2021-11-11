@@ -13,16 +13,23 @@
   </head>
   <body class="dark-theme">
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="--bs-bg-opacity: .7">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Malas Prontas</a>
+          <a class="navbar-brand" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffe4" class="bi bi-briefcase" viewBox="0 0 16 16">
+              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+            Malas Prontas
+          </a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
+                <a class="nav-link" href="#produtos">Produtos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled">Sobre nós</a>
@@ -31,8 +38,9 @@
           </div>
         </div>
     </nav>
-
+    <!--Carroussel-->
     <div class="carousel-style">
+    <div class="carrousel-espaco"></div>
       <div id="carouselExampleControls" class="carousel slide img-wid" data-bs-ride="carousel">
         <div class="carousel-inner teste">
           <div class="carousel-item active">
@@ -52,82 +60,98 @@
         </button>
       </div>
     </div>
-
-    <div class="container-bg-style">
-      <div class="titulo-style">
-        <h2>Produtos</h2>
+    <!-- Section produtos-->
+    <section id="produtos">
+      <div class="container-bg-style">
+        <div class="titulo-style">
+          <h2 class="text-white" style= "--bs-text-opacity: .9;">Produtos</h2>
+        </div>
+        
+          <div class="container-style">
+            <div class="card card-style" style="width: 18rem; --bs-bg-opacity: .7">
+              <img src="img/mala02.jpg" class="card-img-top" alt="Mala viagem" title="Mala XM6" >
+              <div class="card-body">
+                <h5 class="card-title">Mala SM11</h5>
+                <p class="card-text card-text-style">
+                  Cor: Cinza <br>
+                  Tamanho: Pequena <br>
+                  Altura: 19 cm <br>
+                  Largura: 25 cm <br>
+                  Profundidade: 37 cm <br>
+                  Garantia: 4 meses <br>
+                </p>
+                <span class="valor">Valor: R$ 190,00 <br></span>
+                <a href="#" class="btn btn-dark btn-ver-mais">ver mais</a>
+              </div>
+            </div>
+            <div class="card card-style" style="width: 18rem;">
+              <img src="img/mala02.jpg" class="card-img-top" alt="Mala viagem" title="Mala XM6">
+              <div class="card-body">
+                <h5 class="card-title">Mala XM11</h5>
+                <p class="card-text card-text-style">
+                  Cor: Preto <br>
+                  Tamanho: Médio <br>
+                  Altura: 28 cm <br>
+                  Largura: 25 cm <br>
+                  Profundidade: 51 cm <br>
+                  Garantia: 4 meses <br>
+                </p>
+                <span class="valor">Valor: R$ 230,00 <br></span>
+                <a href="#" class="btn btn-dark btn-ver-mais">ver mais</a>
+              </div>
+            </div>
+            <div class="card card-style" style="width: 18rem;">
+              <img src="img/mala02.jpg" class="card-img-top mala-preta" alt="Mala viagem" title="Mala XM6">
+              <div class="card-body">
+                <h5 class="card-title">Mala LG11</h5>
+                <p class="card-text card-text-style">
+                  Cor: Vermelho <br>
+                  Tamanho: Grande <br>
+                  Altura: 36 cm <br>
+                  Largura: 33 cm <br>
+                  Profundidade: 59 cm <br>
+                  Garantia: 4 meses <br>
+                </p>
+                <span class="valor">Valor: R$ 430,00 <br></span>
+                <a href="#" class="btn btn-dark btn-ver-mais">ver mais</a>
+              </div>
+            </div>
+            <div class="card card-style" style="width: 18rem;">
+              <img src="img/mala02.jpg" class="card-img-top" alt="Mala viagem" title="Mala XM6">
+              <div class="card-body">
+                <h5 class="card-title">Mala XLG11</h5>
+                <p class="card-text card-text-style">
+                  Cor: Preto <br>
+                  Tamanho: Médio <br>
+                  Altura: 28 cm <br>
+                  Largura: 25 cm <br>
+                  Profundidade: 51 cm <br>
+                  Garantia: 4 meses <br>
+                </p>
+                <span class="valor">Valor: R$ 230,00 <br></span>
+                <a href="#" class="btn btn-dark btn-ver-mais">ver mais</a>
+              </div>
+            </div>
+        </div>
       </div>
-      
-        <div class="container-style">
-          <div class="card card-style" style="width: 18rem;">
-            <img src="img/mala02.jpg" class="card-img-top" alt="Mala viagem" title="Mala XM6">
-            <div class="card-body">
-              <h5 class="card-title">Mala XM11</h5>
-              <p class="card-text card-text-style">
-                Cor: Preto <br>
-                Tamanho: Médio <br>
-                Altura: 28 cm <br>
-                Largura: 25 cm <br>
-                Profundidade: 51 cm <br>
-                Garantia: 4 meses <br>
-              </p>
-              <span class="valor">Valor: R$ 230,00 <br></span>
-              <a href="#" class="btn btn-primary btn-ver-mais">ver mais</a>
-            </div>
-          </div>
-          <div class="card card-style" style="width: 18rem;">
-            <img src="img/mala02.jpg" class="card-img-top" alt="Mala viagem" title="Mala XM6">
-            <div class="card-body">
-              <h5 class="card-title">Mala XM11</h5>
-              <p class="card-text card-text-style">
-                Cor: Preto <br>
-                Tamanho: Médio <br>
-                Altura: 28 cm <br>
-                Largura: 25 cm <br>
-                Profundidade: 51 cm <br>
-                Garantia: 4 meses <br>
-              </p>
-              <span class="valor">Valor: R$ 230,00 <br></span>
-              <a href="#" class="btn btn-primary btn-ver-mais">ver mais</a>
-            </div>
-          </div>
-          <div class="card card-style" style="width: 18rem;">
-            <img src="img/mala02.jpg" class="card-img-top" alt="Mala viagem" title="Mala XM6">
-            <div class="card-body">
-              <h5 class="card-title">Mala XM11</h5>
-              <p class="card-text card-text-style">
-                Cor: Preto <br>
-                Tamanho: Médio <br>
-                Altura: 28 cm <br>
-                Largura: 25 cm <br>
-                Profundidade: 51 cm <br>
-                Garantia: 4 meses <br>
-              </p>
-              <span class="valor">Valor: R$ 230,00 <br></span>
-              <a href="#" class="btn btn-primary btn-ver-mais">ver mais</a>
-            </div>
-          </div>
-          <div class="card card-style" style="width: 18rem;">
-            <img src="img/mala02.jpg" class="card-img-top" alt="Mala viagem" title="Mala XM6">
-            <div class="card-body">
-              <h5 class="card-title">Mala XM11</h5>
-              <p class="card-text card-text-style">
-                Cor: Preto <br>
-                Tamanho: Médio <br>
-                Altura: 28 cm <br>
-                Largura: 25 cm <br>
-                Profundidade: 51 cm <br>
-                Garantia: 4 meses <br>
-              </p>
-              <span class="valor">Valor: R$ 230,00 <br></span>
-              <a href="#" class="btn btn-primary btn-ver-mais">ver mais</a>
-            </div>
-          </div>
-      </div>
-    </div>
-
+  </section>
+    <!--Footer-->
   
-    
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark" style="--bs-bg-opacity: .5">
+      <p class="col-md-4 mb-0 text-white">&copy; 2021 Malas Prontas, #Squad53</p>
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffe4" class="bi bi-briefcase" viewBox="0 0 16 16">
+<path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Produtos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Sobre Nós</a></li>
+      </ul>
+    </footer>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
